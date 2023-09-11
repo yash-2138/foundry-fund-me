@@ -21,9 +21,10 @@ contract FundMeTest  is Test{
         assertEq(fundMe.i_owner(), msg.sender);
     }
 
-    // function testVersion() public {
-    //     uint256 version =  fundMe.getVersion();
-    //     console.log(version);
-    //     assertEq(version, 4);
-    // }
+    function testVersion() public {
+        uint256 version =  fundMe.getVersion();
+        console.log("hello");
+        console.log( version);
+        assertEq(version, 4);
+    }
 }
